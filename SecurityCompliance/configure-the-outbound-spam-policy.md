@@ -15,7 +15,8 @@ ms.collection:
 - M365-security-compliance
 description: "Outbound spam filtering is always enabled if you use the service for sending outbound email, thereby protecting organizations using the service and their intended recipients."
 ---
-
+[!CAUTION]
+The notification for when a sender is restricted is now part of the Security & Compliance Center (SCC) alerting platform. Instead  of using the below to send a notification, the list of users to alert is now located in the "User restricted from sending email"    alert. Please start using the [alert policies page](https://protection.office.com/?hash=/alertpolicies) in the Security & Compliance Center to configure this alert, as we will be removing this option in the future. [Read about the new Restricted Users experience.](https://go.microsoft.com/fwlink/?linkid=2015593)
 # Configure the outbound spam policy
 
 Outbound spam filtering is always enabled if you use the service for sending outbound email, thereby protecting organizations using the service and their intended recipients. Similar to inbound filtering, outbound spam filtering is comprised of connection filtering and content filtering, however the outbound filter settings are not configurable. If an outbound message is determined to be spam, it is routed through the higher risk delivery pool, which reduces the probability of the normal outbound-IP pool being added to a block list. If a customer continues to send outbound spam through the service, they will be blocked from sending messages. Although outbound spam filtering cannot be disabled or changed, you can configure several company-wide outbound spam settings via the default outbound spam policy. 
